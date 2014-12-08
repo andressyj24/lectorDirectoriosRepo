@@ -18,7 +18,7 @@ public class LectorDirectorios {
 
 	public LectorDirectorios(String directorioPadre, String ruc) {
 		this.dir = Paths.get(directorioPadre);
-		this.directoriosTipoInformacion = new HashMap<String, Path>();
+		this.directoriosTipoInformacion = new HashMap<>();
 		this.archivos = new TreeMap<>();
 		this.ruc = ruc;
 	}
@@ -30,8 +30,10 @@ public class LectorDirectorios {
 		try {
 			obtenerDirectoriosDeTipoInformacion();
 			explorarDirectoriosDeTiposInformacion();
-		} catch (IOException | DirectoryIteratorException x) {
-			x.printStackTrace();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		} catch (DirectoryIteratorException die) {
+			die.printStackTrace();
 		}
 	}
 
