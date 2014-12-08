@@ -8,8 +8,8 @@ import com.dichem.model.LectorDirectorios;
 
 public class LeerDirectoriosTest {
 
-	String directorioPadre = "C:\\Users\\Andres\\workspaceLuna\\lectorDeDirectorios\\src\\test\\resources\\DirectorioPadre";
-
+	//String directorioPadre = "C:\\Users\\Andres\\workspaceLuna\\lectorDeDirectorios\\src\\test\\resources\\DirectorioPadre";
+	String directorioPadre = "/Users/jorgeluis/lectorDirectoriosRepo/lectorDeDirectorios/src/test/resources/DirectorioPadre";
 	@Test
 	public void debeListarElContenidoDeLosSubdirectoriosPorRUC() {
 		// Arrange
